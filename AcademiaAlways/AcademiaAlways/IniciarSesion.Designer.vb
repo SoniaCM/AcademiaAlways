@@ -29,6 +29,7 @@ Partial Class IniciarSesion
         Me.CajaUser = New System.Windows.Forms.TextBox()
         Me.CajaClave = New System.Windows.Forms.TextBox()
         Me.btnInicio = New System.Windows.Forms.Button()
+        Me.btnVolver = New System.Windows.Forms.Button()
         Me.InicioSesion.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -96,15 +97,30 @@ Partial Class IniciarSesion
         Me.btnInicio.Text = "Iniciar Sesión"
         Me.btnInicio.UseVisualStyleBackColor = False
         '
+        'btnVolver
+        '
+        Me.btnVolver.BackColor = System.Drawing.Color.White
+        Me.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnVolver.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnVolver.Location = New System.Drawing.Point(28, 206)
+        Me.btnVolver.Name = "btnVolver"
+        Me.btnVolver.Size = New System.Drawing.Size(81, 43)
+        Me.btnVolver.TabIndex = 3
+        Me.btnVolver.Text = "Volver"
+        Me.btnVolver.UseVisualStyleBackColor = False
+        '
         'IniciarSesion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(441, 273)
+        Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.btnInicio)
         Me.Controls.Add(Me.InicioSesion)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "IniciarSesion"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Iniciar Sesion"
@@ -119,4 +135,5 @@ Partial Class IniciarSesion
     Friend WithEvents iblClave As System.Windows.Forms.Label
     Friend WithEvents iblUser As System.Windows.Forms.Label
     Friend WithEvents btnInicio As System.Windows.Forms.Button
+    Friend WithEvents btnVolver As System.Windows.Forms.Button
 End Class

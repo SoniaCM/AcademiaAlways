@@ -34,6 +34,7 @@ Partial Class Presentacion
         'btnInicio
         '
         Me.btnInicio.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnInicio.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnInicio.Location = New System.Drawing.Point(410, 197)
         Me.btnInicio.Name = "btnInicio"

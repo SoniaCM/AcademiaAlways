@@ -6,5 +6,6 @@
 
     Private Sub btnInicio_Click(sender As Object, e As EventArgs) Handles btnInicio.Click
         IniciarSesion.Show()
+        Me.Hide()
     End Sub
 End Class
