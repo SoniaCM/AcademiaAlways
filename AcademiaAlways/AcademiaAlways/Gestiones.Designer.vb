@@ -26,17 +26,14 @@ Partial Class Gestiones
         Me.MenuGestiones = New System.Windows.Forms.MenuStrip()
         Me.AlumnosItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AltasItemAlu = New System.Windows.Forms.ToolStripMenuItem()
-        Me.BajasItemAlu = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ModificacionesItemAlu = New System.Windows.Forms.ToolStripMenuItem()
         Me.BusquedasItemAlu = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProfesoresItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AltasItemProf = New System.Windows.Forms.ToolStripMenuItem()
-        Me.BajasItemProf = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ModificacionesItemProf = New System.Windows.Forms.ToolStripMenuItem()
         Me.BusquedasItemProf = New System.Windows.Forms.ToolStripMenuItem()
         Me.EmpleadosItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CambiarClavesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.btVolver = New System.Windows.Forms.Button()
+        Me.GestionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuGestiones.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -52,7 +49,7 @@ Partial Class Gestiones
         '
         'AlumnosItem
         '
-        Me.AlumnosItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AltasItemAlu, Me.BajasItemAlu, Me.ModificacionesItemAlu, Me.BusquedasItemAlu})
+        Me.AlumnosItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AltasItemAlu, Me.BusquedasItemAlu})
         Me.AlumnosItem.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AlumnosItem.Name = "AlumnosItem"
         Me.AlumnosItem.Size = New System.Drawing.Size(84, 25)
@@ -61,31 +58,19 @@ Partial Class Gestiones
         'AltasItemAlu
         '
         Me.AltasItemAlu.Name = "AltasItemAlu"
-        Me.AltasItemAlu.Size = New System.Drawing.Size(184, 26)
-        Me.AltasItemAlu.Text = "Altas"
-        '
-        'BajasItemAlu
-        '
-        Me.BajasItemAlu.Name = "BajasItemAlu"
-        Me.BajasItemAlu.Size = New System.Drawing.Size(184, 26)
-        Me.BajasItemAlu.Text = "Bajas"
-        '
-        'ModificacionesItemAlu
-        '
-        Me.ModificacionesItemAlu.Name = "ModificacionesItemAlu"
-        Me.ModificacionesItemAlu.Size = New System.Drawing.Size(184, 26)
-        Me.ModificacionesItemAlu.Text = "Modificaciones"
+        Me.AltasItemAlu.Size = New System.Drawing.Size(155, 26)
+        Me.AltasItemAlu.Text = "Gestiones"
         '
         'BusquedasItemAlu
         '
         Me.BusquedasItemAlu.BackColor = System.Drawing.SystemColors.Control
         Me.BusquedasItemAlu.Name = "BusquedasItemAlu"
-        Me.BusquedasItemAlu.Size = New System.Drawing.Size(184, 26)
+        Me.BusquedasItemAlu.Size = New System.Drawing.Size(155, 26)
         Me.BusquedasItemAlu.Text = "Busquedas"
         '
         'ProfesoresItem
         '
-        Me.ProfesoresItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AltasItemProf, Me.BajasItemProf, Me.ModificacionesItemProf, Me.BusquedasItemProf})
+        Me.ProfesoresItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AltasItemProf, Me.BusquedasItemProf})
         Me.ProfesoresItem.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ProfesoresItem.Name = "ProfesoresItem"
         Me.ProfesoresItem.Size = New System.Drawing.Size(96, 25)
@@ -94,30 +79,18 @@ Partial Class Gestiones
         'AltasItemProf
         '
         Me.AltasItemProf.Name = "AltasItemProf"
-        Me.AltasItemProf.Size = New System.Drawing.Size(184, 26)
-        Me.AltasItemProf.Text = "Altas"
-        '
-        'BajasItemProf
-        '
-        Me.BajasItemProf.Name = "BajasItemProf"
-        Me.BajasItemProf.Size = New System.Drawing.Size(184, 26)
-        Me.BajasItemProf.Text = "Bajas"
-        '
-        'ModificacionesItemProf
-        '
-        Me.ModificacionesItemProf.Name = "ModificacionesItemProf"
-        Me.ModificacionesItemProf.Size = New System.Drawing.Size(184, 26)
-        Me.ModificacionesItemProf.Text = "Modificaciones"
+        Me.AltasItemProf.Size = New System.Drawing.Size(155, 26)
+        Me.AltasItemProf.Text = "Gestiones"
         '
         'BusquedasItemProf
         '
         Me.BusquedasItemProf.Name = "BusquedasItemProf"
-        Me.BusquedasItemProf.Size = New System.Drawing.Size(184, 26)
+        Me.BusquedasItemProf.Size = New System.Drawing.Size(155, 26)
         Me.BusquedasItemProf.Text = "Busquedas"
         '
         'EmpleadosItem
         '
-        Me.EmpleadosItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CambiarClavesToolStripMenuItem})
+        Me.EmpleadosItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GestionesToolStripMenuItem, Me.CambiarClavesToolStripMenuItem})
         Me.EmpleadosItem.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EmpleadosItem.Name = "EmpleadosItem"
         Me.EmpleadosItem.Size = New System.Drawing.Size(98, 25)
@@ -140,6 +113,12 @@ Partial Class Gestiones
         Me.btVolver.TabIndex = 1
         Me.btVolver.Text = "Volver"
         Me.btVolver.UseVisualStyleBackColor = False
+        '
+        'GestionesToolStripMenuItem
+        '
+        Me.GestionesToolStripMenuItem.Name = "GestionesToolStripMenuItem"
+        Me.GestionesToolStripMenuItem.Size = New System.Drawing.Size(185, 26)
+        Me.GestionesToolStripMenuItem.Text = "Gestiones"
         '
         'Gestiones
         '
@@ -165,15 +144,12 @@ Partial Class Gestiones
     Friend WithEvents MenuGestiones As System.Windows.Forms.MenuStrip
     Friend WithEvents AlumnosItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AltasItemAlu As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents BajasItemAlu As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ModificacionesItemAlu As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents BusquedasItemAlu As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ProfesoresItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AltasItemProf As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents BajasItemProf As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ModificacionesItemProf As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents BusquedasItemProf As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents EmpleadosItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents CambiarClavesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents btVolver As System.Windows.Forms.Button
+    Friend WithEvents GestionesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class
